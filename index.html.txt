@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+  <title>Multilevel Dropdown Navbar</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="julio.css">
+
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav id="menu">
+        <div class="menu-icons">
+            <a href="#" onclick="OpenSideMenu()"> <i class="fas fa-bars" id="open"></i> </a> 
+            <a href="#" onclick="CloseSideMenu()"> <i class="fas fa-times" id="close"></i> </a>
+        </div>
+
+
+        <!-- <a href="index.html" class="logo">
+          <i class="fas fa-utensils"></i>
+        </a>-->
+        <ul class="nav-list" id="nav-links">
+          <li>
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <a href="#">Menu
+              <i class="fas fa-arrow-circle-down"></i>
+            </a>
+
+            <ul class="sub-menu">
+              <li>
+                <a href="#">Breakfast</a>
+              </li>
+
+              <li>
+                <a href="#">Lunch
+                <i class="fas fa-arrow-circle-down"></i>
+              </a>
+                <ul class="sub-menu">
+                  <li>
+                    <a href="#">Food</a>
+                  </li>
+                  <li>
+                    <a href="#">Food</a>
+                  </li>
+                  <li>
+                    <a href="#">More..
+                      <i class="fas fa-arrow-circle-down"></i>
+                    </a>
+                    <ul class="sub-menu">
+                      <li>
+                        <a href="#">Food</a>
+                      </li>
+                      <li>
+                        <a href="#">Food</a>
+                      </li>
+                      <li>
+                        <a href="#">Food..</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">Dinner</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Our Chefs</a>
+          </li>
+          <li>
+            <a href="#">Gallery</a>
+          </li>
+          <li>
+            <a href="#">Blog</a>
+          </li>
+          <li>
+            <a href="#">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <section class="hero">
+   <!---->
+  </section>
+ 
+<!--<script> <div class="text">
+      <h2>Proudly Servig</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa pariatur aspernatur cupiditate consectetur sit excepturi debitis doloremque repellendus corporis ex.</p>
+     <a href="#" class="btn">Learn More</a>
+    </div>
+  const selectElement = (element) => document.querySelector(element);
+  selectElement(element '.menu-icons').addEventListener('click', ()=>{
+    selectElement( element 'nav').classList.toggle(token 'active');
+  });
+  </script>-->
+  <script>
+    function OpenSideMenu(){
+      document.getElementById('nav-links').style.width='100vw';
+      document.getElementById('close').display='block';
+      document.getElementById('open').display='none';
+    }
+    function CloseSideMenu(){
+      document.getElementById('nav-links').style.width='0';
+    }
+  </script>
+  <script>
+    $(document).ready(function(){
+      $('#open').mousedown(function(){
+        $('#close').addClass('disp');
+      
+
+
+      });
+      $('#open').mouseout(function(){
+        $('#close').addClass('');
+      });
+
+     
+    })
+
+  </script>
+
+</body>
+</html>
